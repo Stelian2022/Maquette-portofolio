@@ -1,0 +1,585 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+*{
+    color: grey;
+}
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+  }
+ 
+  #menuHeader {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    position: relative;
+    z-index: 2;
+  }
+ 
+  #menuHeader li {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+  
+  #menuHeader ul {
+    width: 100px;
+    list-style-type: none;
+    position: absolute;
+    border: none;
+    top: 60px;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+    width: 30vh;
+  
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  
+  #brand {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  
+  #burger {
+    color: black;
+    font-size: 1rem;
+    position: absolute;
+    left: 60vh;
+    
+    top: 15px;
+  }
+  #box:checked ~ ul {
+    max-height: 20vh;
+    
+  }
+  #box {
+    display: none;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 0;
+    
+  }
+  
+  /* menu resp */
+  
+  /* header  */
+  
+  #header {
+    background-image: url(../img/parallax1.jpg);
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    border: none;
+    position: relative;
+    
+  }
+  #header h1{
+    background-color: black;
+    height: 7vh;
+    width: 27vh;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+   font-size: 1.5rem;
+   font-family:  sans-serif; 
+   font-style: normal;
+  }
+  .myLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: .5rem;
+  }
+  #about h2{
+    padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+
+  }
+  #about h3{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+  }
+  #about p{
+    padding: 0.7rem;
+font-size: 1.1rem;
+  }
+  #name{
+    display: flex;
+    justify-content: center;
+  }
+  .photo img{
+    padding: 1rem;
+    
+  }
+  .text h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* bar skills */
+  #barskills {
+    padding-left: 2rem;
+    height: 30vh;
+  }
+  
+  #barskills h3 {
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+  }
+  #skills h3 {
+    padding-left: 2rem;
+  }
+  #skills p {
+    padding-left: 2rem;
+  }
+  #bar1 {
+    width: 90%;
+    height: 3vh;
+    background-color: #a0a2a5;
+    color: white;
+    text-align: center;
+  }
+  .bar12 {
+    background-color: #535555;
+    width: 85%;
+  color: white;
+    height: 3vh;
+  }
+  
+  #bar2 {
+    width: 90%;
+    height: 3vh;
+    background-color: #a0a2a5;
+  
+    color: white;
+    text-align: center;
+  }
+  .bar13 {
+    background-color: #535555;
+    width: 75%;
+    color: white;
+    height: 3vh;
+  }
+  #bar3 {
+    width: 90%;
+    height: 3vh;
+    background-color: #a0a2a5;
+  
+    color: white;
+    text-align: center;
+  }
+  .bar14 {
+    background-color: #535555;
+    width: 65%;
+    color: white;
+    height: 3vh;
+  }
+  /* fin skill section */
+  #middle {
+    background-color: #a0a2a5;
+    width: 100%;
+    height: 60vh;
+  }
+
+  #middle{
+    width: 100%;
+    /* background-color: grey; */
+    display: flex;
+    color: white;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40%;
+    font-size: 1.5rem;
+  
+  text-align: center;
+  }
+  .partners{
+    padding-bottom: 2rem;
+  color: white;
+  }
+  .projects{
+    padding-bottom: 2rem;
+    color: white;
+  }
+  .happy{
+    padding-bottom: 2rem;
+    color: white;
+  }
+  .meetings{
+    color: white;
+  }
+
+  /* #middle h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+  #middle h4 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: normal;
+  } */
+  /* middle-image paralax2 */
+  .image {
+  
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-size: cover;
+  
+
+  }
+  .image img{
+    width: 100%;
+    height: 100%;
+    
+  }
+.portofolio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: .5rem;
+}
+
+/* pics section */
+#myWork h3 {
+    display: flex;
+    justify-content: center;
+  }
+  #myWork h4 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+  }
+  #pics img {
+    width: 100%;
+    vertical-align: bottom;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .load{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  .load button{
+    width: 15vh;
+    height: 6vh;
+    border: none;
+    color: black;
+    
+  }
+  #here h4{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+  }
+  #here h3{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  #map img {
+    padding: 1rem;
+    height: 40vh;
+    width: 100%;
+    border-radius: 6%;
+  }
+
+  #contact {
+    background-color: white;
+  }
+  #contact h3 {
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 2.2rem;
+  }
+  #contact h4 {
+    padding-left: 5rem;
+    font-size: 1.3rem;
+    color: black;
+  }
+  #contact h5 {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+  #locate {
+    font-size: 2rem;
+    padding-right: 2.5rem;
+  }
+  
+  /* contact form */
+  
+  #contact {
+    height: 150vh;
+  }
+  
+  .contact h4 {
+    width: 100%;
+    margin: 3%;
+  }
+  
+  #contactForm {
+    width: 100%;
+    margin: 2%;
+    margin-bottom: 20%;
+    position: relative;
+  }
+  #contactForm input {
+    width: 93%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-color: #f3f5f8;
+  }
+  #contactForm button {
+    width: 35%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 1.5rem;
+  }
+  /* fin contact section */
+  /* footer section */
+  #footer {
+    background-color: grey;
+    width: 100%;
+    height: 30vh;
+  }
+  #top {
+    padding-bottom: 2vh;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+  .toTheTop {
+    width: 10rem;
+    height: 3rem;
+    background-color: white;
+  
+    color: black;
+    text-align: center;
+    padding: 1rem;
+  }
+  .reseauxFooter {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .reseauxFooter i{
+    color: white;
+  }
+  #footer h6 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+@media  screen and (max-width: 576px) 
+{
+    .myLogoWebsite{
+        display: none;
+      }
+      #aboutDesktop p{
+        display: none;
+      }
+      
+      #aboutDesk{
+        display: none;
+      }
+      #map2{
+        display: none;
+      }
+    
+}
+
+
+
+
+  @media screen and (min-width: 576px) {
+    #menuHeader label {
+      display: none;
+    }
+    #menuHeader ul {
+      width: fit-content;
+      flex-direction: row;
+  
+      top: 0;
+      left: 8vh;
+    }
+    #box:not(:checked) ~ ul {
+        max-height: 20vh;
+    
+        /* background-color: red; */
+      }
+      #menuHeader li {
+        right: 0;
+        padding-top: 1rem;
+    
+        font-size: 0.9rem;
+    
+        color: grey;
+      }
+      #menuHeader:hover {
+        background-color: none;
+      }
+      #headerText h1 {
+        width: 100%;
+      }
+      .myLogoWebsite{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        letter-spacing: .5rem;
+        
+      }
+      .myLogoWebsite{
+        background-color: black;
+       
+      }
+      .myLogoWebsite h1{
+        color: white;
+      }
+      .myLogo{
+        display: none;
+      }
+      #about p{
+        display: none;
+      }
+      #aboutDesktop{
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      #myName{
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      #barskills{
+        padding-left: 20%;
+        padding-right: 15%;
+      }
+      #middle {
+        display: flex;
+       width: 100%;
+        text-align: center;
+        height: 10%;
+        flex-direction: row;
+       padding: 0;
+      }
+      .partners{
+        padding-right: 18rem;
+      }
+      .projects{
+        padding-right: 7rem;
+        
+      
+      }
+      .happy{
+        padding-left: 20rem;
+      }
+   .meetings{
+    padding-left: 20rem;
+   }
+
+    
+     
+      #pics img {
+        width: 24%;
+        padding: 1rem;
+      }
+      #map img{
+        
+    display: none;
+      }
+      
+      #contactForm :first-child{
+        width: 50%;
+      
+      }
+      #contactForm :nth-child(-n+2){
+        width:50%;
+        margin-right: 0;
+       
+      } 
+
+      #contactForm :nth-last-child(){
+        width: 100%;
+       margin: 0;
+       
+      }
+     #contactForm{
+      margin: 0;
+       display: flex; 
+      
+      width: 100%;
+      position: relative;
+      display: block;
+      
+     }
+     
+     #contactForm button{
+      position: absolute;
+      top: 22vh;
+      right: 48.5%;
+     }
+       #map2 img{
+        height: 250px;
+        width: 400px;
+        position: absolute;
+        left: 10%;
+      
+      }
+     #contact{
+    padding-left: 40%;
+    height: 60vh;
+width: 100%;
+
+
+     }
+   
+div#footer{
+    position: absolute;
+    left: 0;
+  margin-top: 10vh;
+}
+}
