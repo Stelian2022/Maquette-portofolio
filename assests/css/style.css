@@ -437,6 +437,10 @@ font-size: 1.1rem;
     #menuHeader label {
       display: none;
     }
+    body{
+      margin: 0;
+      padding: 0;
+    }
     #menuHeader ul {
       width: fit-content;
       flex-direction: row;
@@ -502,25 +506,12 @@ font-size: 1.1rem;
         display: flex;
        width: 100%;
         text-align: center;
-        height: 10%;
+        height: 15vh;
         flex-direction: row;
        padding: 0;
+       justify-content: space-between;
       }
-      .partners{
-        padding-right: 18rem;
-      }
-      .projects{
-        padding-right: 7rem;
-        
-      
-      }
-      .happy{
-        padding-left: 20rem;
-      }
-   .meetings{
-    padding-left: 20rem;
-   }
-
+    
     
      
       #pics img {
@@ -532,54 +523,65 @@ font-size: 1.1rem;
     display: none;
       }
       
-      #contactForm :first-child{
+      /* #contactForm :first-child{
         width: 50%;
       
-      }
-      #contactForm :nth-child(-n+2){
+      } */
+      /* #contactForm :nth-child(-n+2){
         width:50%;
         margin-right: 0;
        
-      } 
-
+      }  */
+/* 
       #contactForm :nth-last-child(){
         width: 100%;
        margin: 0;
        
-      }
+      }   */
      #contactForm{
       margin: 0;
-       display: flex; 
+       /* display: flex;  */
       
-      width: 100%;
-      position: relative;
-      display: block;
+      width: 50%;
+      position: absolute;
+      /* display: block;  */
       
      }
      
-     #contactForm button{
+     /* #contactForm button{
       position: absolute;
       top: 22vh;
       right: 48.5%;
-     }
+     } */
        #map2 img{
-        height: 250px;
-        width: 400px;
+        height: 150px;
+        width: 250px;
         position: absolute;
-        left: 10%;
+        left: 10px;
+        
+        
+       
       
       }
+      .adress{
+        /* position: absolute;
+        left: 35%; */
+     
+      }
      #contact{
-    padding-left: 40%;
-    height: 60vh;
-width: 100%;
+      display: flex;
+      justify-content: center;
+    /* padding-left: 40%; */
+    height: 80vh;
+    width: 100%;
+    /* position: relative; */
+
 
 
      }
-   
-div#footer{
-    position: absolute;
+  #footer{
+     position: absolute;
     left: 0;
-  margin-top: 10vh;
+   top: 80vh; 
 }
 }
