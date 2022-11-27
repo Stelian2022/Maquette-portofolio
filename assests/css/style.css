@@ -514,10 +514,10 @@ body {
     left: 33rem;
     /* padding-right: 10%; */
   }
-  .contactEmail{
+  .contactEmail {
     width: 48%;
   }
-  .contactName{
+  .contactName {
     width: 48%;
   }
 
@@ -526,7 +526,6 @@ body {
     width: 250px;
     position: absolute;
     left: 15rem;
-    
   }
   .adress {
     width: 50%;
