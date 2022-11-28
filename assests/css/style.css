@@ -10,6 +10,7 @@
 }
 body {
   margin: 0;
+  
 }
 
 #menuHeader {
@@ -59,8 +60,9 @@ body {
 #burger {
   color: black;
   font-size: 1rem;
-  position: absolute;
-  left: 60vh;
+  position: absolute; 
+  right: 0;
+ 
 
   top: 15px;
 }
@@ -89,6 +91,7 @@ body {
   width: 100%;
   border: none;
   position: relative;
+  
 }
 #header h1 {
   background-color: black;
@@ -129,6 +132,8 @@ body {
 }
 .photo img {
   padding: 1rem;
+  width: 100%;
+ 
 }
 .text h3 {
   display: flex;
@@ -331,7 +336,7 @@ body {
 /* contact form */
 
 #contact {
-  height: 90vh;
+  height: 60vh;
   width: 100%;
 }
 
