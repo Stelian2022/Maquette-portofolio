@@ -432,6 +432,75 @@ body {
     top: 0;
     left: 8vh;
   }
+  #brand {
+    display: none;
+  }
+
+  #menuHeader {
+    display: flex;
+
+    position: fixed;
+    position: relative;
+    z-index: 2;
+  }
+
+  #menuHeader ul {
+    width: 50vh;
+    list-style-type: none;
+    position: absolute;
+    border: none;
+
+    background-color: rgba(red, green, blue, alpha);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    height: 30vh;
+
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  /* menu resp */
+
+  #box:checked ~ ul {
+    max-height: 50vh;
+  }
+  #box {
+    display: none;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 0;
+  }
+  /* The navigation menu */
+
+  /* Navigation links */
+  #menuHeader a {
+    float: left;
+    height: 3rem;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 0.6rem;
+    text-decoration: none;
+
+    text-align: left;
+  }
+  #menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    width: 40vw;
+  }
+
+  /* Add a red background color to navigation links on hover */
+  #menuHeader a:hover {
+    background-color: rgb(179, 177, 177);
+    color: black;
+  }
+
   #box:not(:checked) ~ ul {
     max-height: 20vh;
 
@@ -439,7 +508,7 @@ body {
   }
   #menuHeader li {
     right: 0;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 
     font-size: 0.9rem;
 
