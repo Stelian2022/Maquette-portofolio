@@ -8,16 +8,52 @@
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  
+:root {
+  --color-one: #999999;
+  --color-two: #575757;
+  --color-three: #303030;
+  --color-four: #d3d1d1;
+  --color-five: #fff;
+  --color-six: #fff;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  margin: 0;
+}
+
+
+#portfolioModaleBack{
+  background-color: #000;
+  position: fixed;
+ width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ z-index: 3;
+ 
+}
+#portfolioModaleBack img{
+  width: 80wv;
+}
+
+#portfolioModaleBackClose{
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  styl
+}
+>>>>>>> d56c16417d3e69cb2c497402a4d5604e4abceb07
 /* test */
 .main {
   position: relative;
   left: 20px;
 }
+<<<<<<< HEAD
 .parent{
   margin-left:40px;
 }
@@ -32,6 +68,22 @@ span{
 
 
 
+=======
+.parent {
+  margin-left: 40px;
+}
+p {
+  position: static;
+  padding-left: 50px;
+}
+span {
+  position: absolute;
+  left: 50px;
+}
+#menuHeader a {
+  text-decoration: none;
+}
+>>>>>>> d56c16417d3e69cb2c497402a4d5604e4abceb07
 #menuHeader {
   display: flex;
   width: 100%;
@@ -66,7 +118,7 @@ span{
   width: 30vh;
 
   max-height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 
@@ -81,9 +133,8 @@ span{
 #burger {
   color: black;
   font-size: 1rem;
-  position: absolute; 
+  position: absolute;
   right: 0;
- 
 
   top: 15px;
 }
@@ -112,7 +163,6 @@ span{
   width: 100%;
   border: none;
   position: relative;
-  
 }
 #header h1 {
   background-color: black;
@@ -154,7 +204,6 @@ span{
 .photo img {
   padding: 1rem;
   width: 100%;
- 
 }
 .text h3 {
   display: flex;
@@ -453,6 +502,50 @@ span{
     margin: 0;
     padding: 0;
   }
+  /* modale img portfolio */
+#portfolioModaleBack{
+  background-color: #000;
+  position: fixed;
+  width: 100wv;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+#portfolioModaleBackClose{
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+  /* menu modal css */
+  .modalParent {
+    position: relative;
+  }
+  #modaleMenu {
+    position: absolute;
+    left: 0;
+    top: 33.7px;
+    width: 30rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: #fff;
+    display: none;
+  }
+  #modaleMenu div {
+    width: 24%;
+  }
+  #modaleMenu img {
+    width: 100%;
+  }
+
   #menuHeader ul {
     width: fit-content;
     flex-direction: row;
@@ -460,6 +553,140 @@ span{
     top: 0;
     left: 8vh;
   }
+  #brand {
+    display: none;
+  }
+
+
+  /* modal window */
+  #myBtnAbout ,  #myBtnPorto , #myBtnContact{
+    background-color: #DCDFE8;
+    border: none;
+    float: left;
+    height: 3rem;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 0.6rem;
+    text-decoration: none;
+
+    text-align: left;
+  }
+  #myBtn:hover{
+    background-color: rgb(179, 177, 177);
+    color: black;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    
+    border: 1px solid #888;
+    width: 50%;
+  position: absolute;
+  left: 200px;
+    box-shadow: 5px 5px 5px 1px black;
+  }
+  .modal-content img{
+    width: 20%;
+    padding: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* fin modal window */
+
+  #menuHeader {
+    display: flex;
+
+    position: fixed;
+    position: relative;
+    z-index: 2;
+  }
+
+  #menuHeader ul {
+    width: 50vh;
+    list-style-type: none;
+    position: absolute;
+    border: none;
+
+    background-color: rgba(red, green, blue, alpha);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    height: 30vh;
+
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  /* menu resp */
+
+  #box:checked ~ ul {
+    max-height: 50vh;
+  }
+  #box {
+    display: none;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 0;
+  }
+  /* The navigation menu */
+
+  /* Navigation links */
+  #menuHeader a {
+    float: left;
+    height: 3rem;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 0.6rem;
+    text-decoration: none;
+
+    text-align: left;
+  }
+  #menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    width: 40vw;
+  }
+
+  /* Add a red background color to navigation links on hover */
+  #menuHeader a:hover {
+    background-color: rgb(179, 177, 177);
+    color: black;
+  }
+
   #box:not(:checked) ~ ul {
     max-height: 20vh;
 
@@ -467,11 +694,14 @@ span{
   }
   #menuHeader li {
     right: 0;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 
     font-size: 0.9rem;
 
     color: grey;
+  }
+  #menuHeader a {
+    text-decoration: none;
   }
   #menuHeader:hover {
     background-color: none;
