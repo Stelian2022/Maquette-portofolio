@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquette portofolio</title>
+    
     <link rel="stylesheet" href="./assests/css/style.css" />
+    <script src="./assests/js/scrips.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,9 +19,12 @@
   <body>
     <!-- section nav -->
 
-    <!-- </nav>
-fin section nav -->
-
+    <!-- element fenetre image modale -->
+    <div id="portfolioModaleBack" style="display: none">
+      <div id="portfolioModaleBackClose">X</div>
+      <img src="" alt="" />
+    </div>
+    <!--fin  element fenetre image modale -->
     <!-- section header -->
     <div id="header">
       <nav id="menuHeader">
@@ -33,7 +38,19 @@ fin section nav -->
         <ul>
           <li><i class="fa-solid fa-user"></i>ABOUT</li>
 
-          <li><i class="fa-solid fa-table-cells"></i>PORTOFOLIO</li>
+          <li class="modalParent">
+            <a href="#"> <i class="fa-solid fa-table-cells"></i>PORTOFOLIO </a>
+            <div id="modaleMenu">
+              <div><img src="./assests/img/p1.jpg" alt="" /></div>
+              <div><img src="./assests/img/p2.jpg" alt="" /></div>
+              <div><img src="./assests/img/p3.jpg" alt="" /></div>
+              <div><img src="./assests/img/p4.jpg" alt="" /></div>
+              <div><img src="./assests/img/p5.jpg" alt="" /></div>
+              <div><img src="./assests/img/p6.jpg" alt="" /></div>
+              <div><img src="./assests/img/p7.jpg" alt="" /></div>
+              <div><img src="./assests/img/p8.jpg" alt="" /></div>
+            </div>
+          </li>
 
           <li><i class="fa-solid fa-envelope"></i>CONTACT</li>
         </ul>
@@ -42,7 +59,8 @@ fin section nav -->
     </div>
 
     <div class="myLogoWebsite"><h1>MY LOGO WEBSITE</h1></div>
-
+    <!-- </nav>
+fin section nav -->
     <section>
       <div id="about">
         <h2>ABOUT ME</h2>
@@ -164,7 +182,7 @@ fin section nav -->
     </div>
 
     <div id="here">
-      <h3>WHERE I WORK </h3>
+      <h3>WHERE I WORK</h3>
       <h4>I'd love your feedback</h4>
     </div>
     <div id="map">
@@ -218,7 +236,8 @@ fin section nav -->
         </div>
       </div>
 
-      <!-- contact form -->
+      <!-- contact 
+        form -->
     </div>
     <footer>
       <div id="footer">
@@ -227,6 +246,7 @@ fin section nav -->
             <i class="fa-solid fa-up-long"></i> To the top
           </div>
         </div>
+
         <div class="reseauxFooter">
           <i class="fa-brands fa-square-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -236,6 +256,14 @@ fin section nav -->
           <i class="fa-brands fa-linkedin-in"></i>
         </div>
         <h6>Powered by Stelian Stanciu</h6>
+      </div>
+
+      <div class="container">
+        <div class="main">
+          <div class="parent">
+            <p><span>lorem ipsum</span></p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

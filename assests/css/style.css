@@ -8,11 +8,62 @@
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  
+:root {
+  --color-one: #999999;
+  --color-two: #575757;
+  --color-three: #303030;
+  --color-four: #d3d1d1;
+  --color-five: #fff;
+  --color-six: #fff;
 }
 
+body {
+  margin: 0;
+}
+
+
+#portfolioModaleBack{
+  background-color: #000;
+  position: fixed;
+ width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ z-index: 3;
+ 
+}
+#portfolioModaleBack img{
+  width: 80wv;
+}
+
+#portfolioModaleBackClose{
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  styl
+}
+/* test */
+.main {
+  position: relative;
+  left: 20px;
+}
+.parent {
+  margin-left: 40px;
+}
+p {
+  position: static;
+  padding-left: 50px;
+}
+span {
+  position: absolute;
+  left: 50px;
+}
+#menuHeader a {
+  text-decoration: none;
+}
 #menuHeader {
   display: flex;
   width: 100%;
@@ -45,7 +96,7 @@ body {
   width: 30vh;
 
   max-height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.5s;
 }
 
@@ -60,9 +111,8 @@ body {
 #burger {
   color: black;
   font-size: 1rem;
-  position: absolute; 
+  position: absolute;
   right: 0;
- 
 
   top: 15px;
 }
@@ -91,7 +141,6 @@ body {
   width: 100%;
   border: none;
   position: relative;
-  
 }
 #header h1 {
   background-color: black;
@@ -133,7 +182,6 @@ body {
 .photo img {
   padding: 1rem;
   width: 100%;
- 
 }
 .text h3 {
   display: flex;
@@ -430,6 +478,50 @@ body {
     margin: 0;
     padding: 0;
   }
+  /* modale img portfolio */
+#portfolioModaleBack{
+  background-color: #000;
+  position: fixed;
+  width: 100wv;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+#portfolioModaleBackClose{
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+  /* menu modal css */
+  .modalParent {
+    position: relative;
+  }
+  #modaleMenu {
+    position: absolute;
+    left: 0;
+    top: 33.7px;
+    width: 30rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: #fff;
+    display: none;
+  }
+  #modaleMenu div {
+    width: 24%;
+  }
+  #modaleMenu img {
+    width: 100%;
+  }
+
   #menuHeader ul {
     width: fit-content;
     flex-direction: row;
@@ -449,6 +541,9 @@ body {
     font-size: 0.9rem;
 
     color: grey;
+  }
+  #menuHeader a {
+    text-decoration: none;
   }
   #menuHeader:hover {
     background-color: none;
