@@ -7,7 +7,11 @@
     <title>Maquette portofolio</title>
     
     <link rel="stylesheet" href="./assests/css/style.css" />
+<<<<<<< HEAD
     <script src="./assests/js/scrips.js" defer></script>
+=======
+    <script src="/assests/js/script.js" defer></script>
+>>>>>>> f41c5d3b75a6f5b535ae1903660eea4db29e3d30
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -28,7 +32,7 @@
     <!-- section header -->
     <div id="header">
       <nav id="menuHeader">
-        <div id="brand">HOME</div>
+        <div id="brand"><a href="">HOME</a></div>
         <label for="box">
           <div id="burger">
             <i class="fa-solid fa-bars"></i>
@@ -36,8 +40,13 @@
         </label>
         <input type="checkbox" id="box" />
         <ul>
-          <li><i class="fa-solid fa-user"></i>ABOUT</li>
+          <li>
+            <button id="myBtnAbout">
+              <i class="fa-solid fa-user"></i>ABOUT
+            </button>
+          </li>
 
+<<<<<<< HEAD
           <li class="modalParent">
             <a href="#"> <i class="fa-solid fa-table-cells"></i>PORTOFOLIO </a>
             <div id="modaleMenu">
@@ -51,8 +60,49 @@
               <div><img src="./assests/img/p8.jpg" alt="" /></div>
             </div>
           </li>
+=======
+          <!-- modal window -->
+          <!-- The Modal -->
+>>>>>>> f41c5d3b75a6f5b535ae1903660eea4db29e3d30
 
-          <li><i class="fa-solid fa-envelope"></i>CONTACT</li>
+          <li>
+            <button id="myBtnPorto">
+              <i class="fa-solid fa-table-cells"></i> PORTOFOLIO
+            </button>
+          </li>
+
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p></p>
+              <img src="./assests/img/p1.jpg" alt="" />
+              <img src="./assests/img/p2.jpg" alt="" />
+              <img src="./assests/img/p3.jpg" alt="" />
+              <img src="./assests/img/p4.jpg" alt="" />
+              <img src="./assests/img/p5.jpg" alt="" />
+              <img src="./assests/img/p6.jpg" alt="" />
+              <img src="./assests/img/p7.jpg" alt="" />
+              <img src="./assests/img/p8.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- second modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p></p>
+             <img src="" alt="">
+            </div>
+          </div>
+          <!-- fin modal window -->
+
+          <li>
+            <button id="myBtnContact">
+              <i class="fa-solid fa-envelope"></i>CONTACT
+            </button>
+          </li>
         </ul>
       </nav>
       <div class="myLogo"><h1>MY LOGO</h1></div>
