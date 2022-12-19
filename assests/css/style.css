@@ -13,6 +13,25 @@ body {
   
 }
 
+/* test */
+.main {
+  position: relative;
+  left: 20px;
+}
+.parent{
+  margin-left:40px;
+}
+p{
+  position :static;
+  padding-left: 50px;
+}
+span{
+  position:absolute;
+  left:50px;
+}
+
+
+
 #menuHeader {
   display: flex;
   width: 100%;
@@ -21,6 +40,8 @@ body {
   position: relative;
   z-index: 2;
 }
+
+
 
 #menuHeader li {
   font-size: 1.5rem;
@@ -165,9 +186,11 @@ body {
 }
 .bar12 {
   background-color: #535555;
-  width: 85%;
+  width: 0%;
   color: white;
   height: 3vh;
+  overflow: hidden;
+  transition:all 1s;
 }
 
 #bar2 {
